@@ -1,11 +1,5 @@
 
 
-var num1x=1;
-	var num1y=0;
-
-var num2x=1;
-var num2y=0;
-
     function lanzamiento1(){
         var dado1 = document.getElementById("dado1");
         var d1 = Math.floor(Math.random() * 6) + 1;
