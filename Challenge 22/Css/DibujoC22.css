@@ -1,0 +1,102 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+#cielo{
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    background: cyan;
+}
+
+.dark{
+    position: absolute;
+    background-color: slategray;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#change{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+
+
+button{
+    align-self:center;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    transition:all .5s ease;
+    color:#41403E;
+    font-size:2rem;
+    letter-spacing:1px;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+
+
+
+#sun{
+    top: 200px;
+    right: 25%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: yellow;
+    border-radius: 100%;
+}
+
+
+
+#mount1{
+    position: absolute;
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-45deg);
+    top: 380px;
+    left: 800px;
+}
+
+#mount2{
+    position: absolute;
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+    transform: rotate(-50deg);
+    left: 650px;
+    top: 380px;
+}
+
+#mount3{
+    position: absolute;
+    background-color: brown;
+    width: 350px;
+    height: 250px;
+    transform: rotate(35deg);
+    left: 950px;
+    top: 380px;
+}
+
+
+#garden{
+    position: absolute;
+    top: 500px;
+}
+
+.garden_conteiner{
+    position: absolute;
+    background-color: green;
+    width: 100rem;
+    height: 35vh;
+}
