@@ -17,30 +17,63 @@
 
 //Condicionales 2
 
-let nota1, nota2, nota3;
-let dato3,dato4,dato5, media;
+// let nota1, nota2, nota3;
+// let dato3,dato4,dato5, media;
 
-dato3 = window.prompt("Primer numero ?")
-nota1 = parseInt(dato3)
+// dato3 = window.prompt("Primer numero ?")
+// nota1 = parseInt(dato3)
 
-dato4= window.prompt("SEGUNDO numero ?")
-nota2 = parseInt(dato4);
+// dato4= window.prompt("SEGUNDO numero ?")
+// nota2 = parseInt(dato4);
 
-dato5= window.prompt("tercer numero ?")
-nota3 = parseInt(dato5);
+// dato5= window.prompt("tercer numero ?")
+// nota3 = parseInt(dato5);
 
-media = (nota1 + nota2 + nota3)/3
+// media = (nota1 + nota2 + nota3)/3
 
 
-if (media > 5){
-    resultat = "Aprobado"
-}else{
-    resultat = "Suspendido"
+// if (media > 5){
+//     resultat = "Aprobado"
+// }else{
+//     resultat = "Suspendido"
+// }
+
+// document.write(` <h3> La nota final es ${resultat} su promedio es ${media} </h3> `);
+
+
+
+//Condicionales 3
+
+// let num1, num2,dato9, dato10;
+
+// dato9 = window.prompt("Primer numero ?")
+// num1 = parseInt(dato9)
+
+// dato10 = window.prompt("Primer numero ?")
+// num2 = parseInt(dato10)
+
+
+// if(num1 > num2) {
+//     document.write(`El numero mayo es ${num1}`)
+// }else if (num2 > num1) {
+//     document.write(`El numero mayo es ${num2}`)
+// }else{
+//     document.write("Son iguales")
+// }
+
+
+//Condicionales 4
+
+let suerte = (Math.random() *6);
+let dado = parseInt(suerte) + 1;
+
+let obj1= document.getElementById("salida")
+
+if (dado > 3){
+    obj1.innerHTML= (`Has ganado ${dado}`)
+}{
+    obj1.innerHTML= (`segui participando ${dado}`)
 }
-
-document.write(` <h3> La nota final es ${resultat} su promedio es ${media} </h3> `)
-
-
 
 
 
