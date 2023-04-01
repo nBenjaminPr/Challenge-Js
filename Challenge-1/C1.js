@@ -82,3 +82,54 @@ console.log(`La suma es ${resultado4}`);
 
 
 //Inicio 9
+
+// let datos, num9;
+
+// datos = window.prompt("Introduce un numero ? ", "0")
+// num9 = parseInt(datos)
+
+// let resultado5= num9 *2;
+
+// 8
+
+//Inicio 10 y 11
+
+// let datos2,datos12,num11, num10;
+
+// datos2 = window.prompt("Introduce un numero ? ", "0")
+// num11 = parseInt(datos2)
+// datos12 = window.prompt("Introduce un numero ? ", "0")
+// num10 = parseInt(datos12)
+
+// let resultado6= num10 - num11 ;
+// let resultado7= num10 * num11 ;
+// document.getElementById("salida").innerHTML = (`La retas es ${resultado6}`)
+
+// document.getElementById("salida2").innerHTML = (`La multiplicacion es ${resultado7}`)
+
+
+// Inicio 12
+
+{
+var contador;
+contador= 1;
+
+while (contador< 5)
+    {
+        let dato8 = prompt("inttroduce numero del 1 al 10: ", " ");
+        let num6= parseInt(dato8);
+
+        document.write (`El numero introducido es ${num6} </br> `)
+        document.write (`El contador es ${num6} </br> `)
+
+        contador = contador +1;
+    }
+
+    document.write (`
+                    </br> <h2>
+                    Fin del Programa contador ya NO es menor que 5
+                    </h2>
+                    ` );
+
+    document.write(`</br> Ultimo numero introducido es ${num6}`)
+}
