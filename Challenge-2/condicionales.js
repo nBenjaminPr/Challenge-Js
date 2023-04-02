@@ -114,19 +114,33 @@
 
 //Condicionales 6
 
-let origen,destino, descuento
+// let origen,destino, descuento
 
-alert("Bievenido a Palma international")
-alert ("Tenemos contacto con barcelona,madrid y valencia")
-origen = prompt ("Ciudad de origen?")
-destino = prompt ("Cual es su destino?")
+// alert("Bievenido a Palma international")
+// alert ("Tenemos contacto con barcelona,madrid y valencia")
+// origen = prompt ("Ciudad de origen?")
+// destino = prompt ("Cual es su destino?")
 
-if ((origen == "palma") && (destino == "barcelona") ){
-    descuento = 5 ;
-}else if ((origen == "palma") && (destino == "madrid") ){
-    descuento = 10 ;
-}else if ((origen == "palma") && (destino == "valencia") ){
-    descuento = 15 ;
+// if ((origen == "palma") && (destino == "barcelona") ){
+//     descuento = 5 ;
+// }else if ((origen == "palma") && (destino == "madrid") ){
+//     descuento = 10 ;
+// }else if ((origen == "palma") && (destino == "valencia") ){
+//     descuento = 15 ;
+// }
+
+// document.write (`<h3> Su descuento es ${descuento}%</h3>` )
+
+//Condicionales 7
+
+let num= 1;
+let dato;
+
+while (num < 10) {
+    dato= prompt ("introduce un numero menor 10; ", " ")
+    num= parseInt(dato);
+
+    document.write(`<br> ${num} </br>`)
 }
 
-document.write (`<h3> Su descuento es ${descuento}%</h3>` )
+document.write("Fin termino")
