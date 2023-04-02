@@ -113,3 +113,20 @@
 // document.write(`<h3> Usted ${acceso} </h3>`)
 
 //Condicionales 6
+
+let origen,destino, descuento
+
+alert("Bievenido a Palma international")
+alert ("Tenemos contacto con barcelona,madrid y valencia")
+origen = prompt ("Ciudad de origen?")
+destino = prompt ("Cual es su destino?")
+
+if ((origen == "palma") && (destino == "barcelona") ){
+    descuento = 5 ;
+}else if ((origen == "palma") && (destino == "madrid") ){
+    descuento = 10 ;
+}else if ((origen == "palma") && (destino == "valencia") ){
+    descuento = 15 ;
+}
+
+document.write (`<h3> Su descuento es ${descuento}%</h3>` )
