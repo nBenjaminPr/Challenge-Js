@@ -133,14 +133,48 @@
 
 //Condicionales 7
 
-let num= 1;
-let dato;
+// !!While no permite valores incorrecto
 
-while (num < 10) {
-    dato= prompt ("introduce un numero menor 10; ", " ")
-    num= parseInt(dato);
+// let num= 1;
+// let dato;
 
-    document.write(`<br> ${num} </br>`)
-}
+// while (num < 10) {
+//     dato= prompt ("introduce un numero menor 10; ", " ")
+//     num= parseInt(dato);
 
-document.write("Fin termino")
+//     document.write(`<br> ${num} </br>`)
+// }
+
+// document.write("Fin termino")
+
+//Condicionales 8
+
+// let edad, final;
+// edad = prompt("que edad tenes?")
+
+//! isNaN es para validar que es un valor numerico
+
+// if (isNaN(edad)){
+//     final = "Error. No es un numero";
+// }else{
+//     final = (edad < 18) ? "Desamasiado joven" : "Mayor de edad";
+// }
+
+// document.write (`<h3> ${final} </h3>`)
+
+
+//Condicionales 8
+
+let dias, mes, año
+
+mes = prompt("Introduzca el numero del mes : ")
+mes= parseInt(mes)
+
+if( mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes==10 || mes ==12 ){
+    document.write ("Este mes tiene 31 dias")
+}else if(mes==2){
+    document.write("El mes puede tener 30 dias")
+    }else{
+        document.write("Tiene 30 dias")
+    }
+
