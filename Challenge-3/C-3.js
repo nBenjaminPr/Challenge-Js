@@ -35,3 +35,34 @@ function suma (n1, n2) {
     var result = curso (22)
     console.log(result);
 
+    //Funciones 6
+
+    function Saludo (persona1, persona2){
+        document.getElementById("name").innerHTML =  (`Hola ${persona1} y ${persona2}`)
+    }
+
+    Saludo("Carlos", "Alberto")
+
+    //Funciones 7
+
+    function ChangeColor(nombreColor){
+        let obj= document.getElementById("informacion")
+        obj.style.color= nombreColor
+    }
+
+    // Funciones 8
+
+    function programa(){
+        let x = 3
+
+        function func(ramdom){
+            if (ramdom) {
+                let x = parseInt (Math.random() * 10)
+                return x
+            }
+            return x
+        }
+
+        document.getElementById("getOut").innerHTML = func(false); //3
+        document.getElementById("getOut").innerHTML += func (1)
+    }
