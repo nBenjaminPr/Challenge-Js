@@ -66,3 +66,23 @@ function suma (n1, n2) {
         document.getElementById("getOut").innerHTML = func(false); //3
         document.getElementById("getOut").innerHTML += func (1)
     }
+
+    // Funciones 9
+
+    function n(){
+        let local= 100;
+        let c = local;
+        return c
+    }
+
+    let a,b;
+    b = "Buen dia"
+    a = "Hello word"
+
+
+    document.write(` <p> El valor de a es: ${a} <br> </p>`)
+    document.write(` <h3> El valor de b es: ${b} <br> </h3>`);
+
+    var c = n();
+
+    document.write(`<p> El valor de C es: ${c} <br> </p>`);
