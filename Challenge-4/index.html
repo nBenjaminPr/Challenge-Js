@@ -29,7 +29,41 @@
             <br>
             <input type="reset" name="B2" value="reset">
         </h4>
+
+        <br>
+
+        <h3>Endrada de datos por "Slide"</h3>
+        <input type="range" id="RangoValor" value="50" onchange="ProcesoDatos()">
+        <p id="resultade"></p>
     </form>
+        <br>
+    <form name="fDatoos">
+        Introduce Numero: <input type="text" size="10" name="entrad3">
+        <b> X </b>
+
+        <select name="" id="lista" onchange="calculadora()">
+        <option value="1" selected>uno</option>
+        <option value="2">dos</option>
+        <option value="3">tres</option>
+        <option value="4">cuatro</option>
+    </select>
+
+    <div id="salid3"></div>
+
+</form>
+
+
+<br>
+<form>
+    <label>Introduce la temperatura en grados Celsius:</label>
+    <input type="text" id="celsius">
+    <button type="button" onclick="convertir()">Convertir</button>
+</form>
+<p id="resultado"></p>
+
+
+
+
 </body>
 <script src="./Forms.js"></script>
 </html>

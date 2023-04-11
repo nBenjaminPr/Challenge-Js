@@ -22,3 +22,35 @@ function calcular (){
     // eval: una expresión de JavaScript que toma el valor introducido por el usuario en un formulario HTML y lo evalúa como una expresión JavaScript.
     document.datos.respuesta.value = eval(document.datos.entrada2.value)
 }
+
+//Form 4
+
+function ProcesoDatos (){
+        const objx = document.getElementById("RangoValor").value;
+        document.getElementById("resultade").innerHTML = objx
+}
+
+
+//Form 5
+
+function calculadora(){
+    const numero = document.fDatoos.entrad3.value
+    const dato = document.getElementById("lista")
+    const valor = dato.options[lista.selectedIndex].value; // .text
+
+    const resultat3 = numero * valor;
+    document.getElementById("salid3").innerHTML = resultat3
+
+}
+
+//Form 6
+
+function convertir() {
+    var celsius = parseFloat(document.getElementById("celsius").value);
+
+    // Convertir de Celsius a Fahrenheit
+    var fahrenheit = (celsius * 9/5) + 32;
+
+    // Mostrar el resultado
+    document.getElementById("resultado").innerHTML = celsius + " grados Celsius son " + fahrenheit + " grados Fahrenheit.";
+}
