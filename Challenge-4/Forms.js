@@ -63,3 +63,5 @@ var getEventTime = function() {
     var end = moment (document.getElementById("end").value);
     alert(moment.duration(end.diff(start)).asDays());
 }
+
+// Form 8

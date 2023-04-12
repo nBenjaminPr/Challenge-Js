@@ -67,7 +67,32 @@
 <input type="date" id="start" onchange="getEventTime()">
 <input type="date" id="end" onchange="getEventTime()">
 
+<br><br>
 
+
+<form action="">
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura" name="altura" required>
+    <br>
+    <label for="edad"> Cual es tu edad:</label>
+    <input type="number" id="edad" name="edad" required>
+    <br>
+    <label for="sexo"> Sexo:</label>
+    <select name="sexo" id="sexo">
+        <option value="">Seleciona tu sexo</option>
+        <option value="masculino">masculino</option>
+        <option value="femenino">femenino</option>
+
+        <br>
+
+        <label for="peso"> Cual es tu peso acutal (kg):</label>
+        <input type="number" name="peso" id="peso">
+        <br>
+        <button type="submit"> Calcular tu peso ideal</button>
+    </select>
+
+
+</form>
 </body>
 <script src="./Forms.js"></script>
 </html>
