@@ -54,3 +54,12 @@ function convertir() {
     // Mostrar el resultado
     document.getElementById("resultado").innerHTML = celsius + " grados Celsius son " + fahrenheit + " grados Fahrenheit.";
 }
+
+
+//Form 7
+
+var getEventTime = function() {
+    var start = moment (document.getElementById("start").value);
+    var end = moment (document.getElementById("end").value);
+    alert(moment.duration(end.diff(start)).asDays());
+}
