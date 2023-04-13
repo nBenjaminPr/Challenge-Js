@@ -91,27 +91,11 @@
 
 <br><br>
 
-<h1 aling="center"> JUEGOS DE APUESTAS</h1>
+<h1 aling="center"> Lanzar Dados</h1>
 
 <form name="game">
-    <div aling=" center">
-        Dinero: <input type="text" name="Dinero" size="5"> &nbsp;&nbsp;
-        Numero de dado: <input type="label" name="dad2" size="5"> 
-
-        <br><br>
-
-        Introduzca un numero del 1 al 6: <input type="text" name="num" size="5">
-        <br><br>
-
-        Introduzca su apuesta<input type="text" name="apuesta" size="5">
-
-        <br><br>    
-        <input type="button" name="play" value="Jugar" onclick="calc()">
-        <input type="button" name="Start" value="Start" onclick="inic()">
-        <br><br>
-
-        <input type="label" name="res" size="15">
-    </div>
+    <button onclick="lanzarDados()">Lanzar Dados</button>
+    <p id="resultado"></p>
 </form>
 </body>
 <script src="./Forms.js"></script>

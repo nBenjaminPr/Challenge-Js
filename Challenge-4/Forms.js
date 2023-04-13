@@ -99,20 +99,9 @@ function calcularPesoIdeal() {
     // Form 9
 
     
-function inic(){
-    var DI = document.game.dinero.value = 100;
-}
-
-function calc(){
-
-    var Din = parseInt (document.game.dinero.value);
-    var Num = document.game.value ;
-    var Apu =  parseInt(document.game.apuesta.value);  
-    var dado = Math.floor(Math.random() *7)  
-    var ganancia = 0
-
-
-    if (Din > 0){
-        
+    function lanzarDados() {
+        var dado1 = Math.floor(Math.random() * 6) + 1;
+        var dado2 = Math.floor(Math.random() * 6) + 1;
+        var resultado = dado1 + dado2;
+        alert("El resultado es: " + resultado);
     }
-}
