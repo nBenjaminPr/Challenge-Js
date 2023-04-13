@@ -65,3 +65,34 @@ var getEventTime = function() {
 }
 
 // Form 8
+function calcularPesoIdeal() {
+    var altura = document.getElementById("altura").value;
+    var edad = document.getElementById("edad").value;
+    var sexo = document.getElementById("sexo").value;
+    var pesoActual = document.getElementById("peso").value;
+
+    if (altura && edad && sexo && pesoActual) {
+        var pesoIdeal;
+        if (sexo === "masculino") {
+        pesoIdeal = altura - 100 - ((altura - 150) / 4) + (edad / 4);
+        } else if (sexo === "femenino") {
+        pesoIdeal = altura - 100 - ((altura - 150) / 2.5) + (edad / 6);
+        }
+
+      // Redondeamos el resultado a un decimal
+        pesoIdeal = pesoIdeal.toFixed(1);
+
+        var mensaje = "Su peso ideal es de " + pesoIdeal + " kg.";
+        if (pesoActual < pesoIdeal) {
+        mensaje += " Debe aumentar de peso.";
+        } else if (pesoActual > pesoIdeal) {
+        mensaje += " Debe perder peso.";
+        } else {
+        mensaje += " Su peso es el ideal.";
+        }
+        alert(mensaje);
+    } else {
+        alert("Por favor, rellene todos los campos.");
+    
+    }}
+
