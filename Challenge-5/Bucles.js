@@ -26,3 +26,44 @@ z = z + "</table>"
 document.getElementById("central2").innerHTML = z
 
 // Blucles 3
+
+let fila 
+let columna = parseInt(prompt("Introduce el tamaño: ", "0"))
+
+for (fila = 1; fila <= columna; fila++){
+
+    for (espacios = columna - fila; espacios > 0; espacios--){
+        document.write("&nbsp&nbsp")
+
+        for (conta = 1; conta < (2*fila); conta++)
+
+        document.write("*")
+
+        document.write("</br>")
+    }
+}
+
+const height = 5;
+const width = 2 * height - 1;
+
+for (let i = 0; i < height; i++) {
+    let row = "";
+    for (let j = 0; j < (width - 1) / 2 - i; j++) {
+    row += " ";
+    }
+  for (let k = 0; k < 2 * i + 1; k++) {
+    row += "*";
+    }
+    console.log(row);
+}
+
+for (let i = height - 2; i >= 0; i--) {
+    let row = "";
+    for (let j = 0; j < (width - 1) / 2 - i; j++) {
+    row += " ";
+    }
+  for (let k = 0; k < 2 * i + 1; k++) {
+    row += "*";
+    }
+    console.log(row);
+}
