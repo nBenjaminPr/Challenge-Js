@@ -27,22 +27,24 @@ document.getElementById("central2").innerHTML = z
 
 // Blucles 3
 
-let fila 
-let columna = parseInt(prompt("Introduce el tamaño: ", "0"))
+// let fila 
+// let columna = parseInt(prompt("Introduce el tamaño: ", "0"))
 
-for (fila = 1; fila <= columna; fila++){
+// for (fila = 1; fila <= columna; fila++){
 
-    for (espacios = columna - fila; espacios > 0; espacios--){
-        document.write("&nbsp&nbsp")
+//     for (espacios = columna - fila; espacios > 0; espacios--){
+//         document.write("&nbsp&nbsp")
 
-        for (conta = 1; conta < (2*fila); conta++)
+//         for (conta = 1; conta < (2*fila); conta++)
 
-        document.write("*")
+//         document.write("*")
 
-        document.write("</br>")
-    }
-}
+//         document.write("</br>")
+//     }
+// }
 
+
+// Blucles 4
 const height = 5;
 const width = 2 * height - 1;
 
@@ -67,3 +69,18 @@ for (let i = height - 2; i >= 0; i--) {
     }
     console.log(row);
 }
+
+//Bucle 5
+
+function functionUno() {
+    let result3=""
+    let i;
+    for (i=1; i <= 6;i++ )
+    {
+        result3 = result3 + `<h3> Titulo ${i} </h3>`
+    }
+    document.getElementById("central3").innerHTML= result3
+}
+
+// Bucle 6
+
