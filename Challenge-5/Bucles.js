@@ -84,3 +84,21 @@ function functionUno() {
 
 // Bucle 6
 
+function generarTabla() {
+    let num1 = parseInt(document.getElementById("num1").value);
+    let num2 = parseInt(document.getElementById("num2").value);
+    let tabla = document.createElement("table");
+    let body = document.getElementsByTagName("body")[0];
+    
+    for (let i = 1; i <= 10; i++) {
+    let row = document.createElement("tr");
+    for (let j = num1; j <= num2; j++) {
+        let cell = document.createElement("td");
+        let texto = document.createTextNode(j + " x " + i + " = " + (j*i));
+        cell.appendChild(texto);
+        row.appendChild(cell);
+    }
+    tabla.appendChild(row);
+    }
+    body.appendChild(tabla);
+}
